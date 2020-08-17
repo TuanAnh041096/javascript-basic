@@ -1,0 +1,59 @@
+<html>
+<head>
+</head>
+<body>
+		<script>
+					//object with contractor
+					<!-- var ten = prompt("Please input first Name", "firstname"); -->
+					<!-- var ho = prompt("Please input last Name", "lastname"); -->
+					<!-- var person = new Object(); -->
+					<!-- person.firstName = ten; -->
+					<!-- person.lastName = ho; -->
+					<!-- person.getFullName = function(){ -->
+						<!-- return person.firstName + " " + person.lastName; -->
+					<!-- } -->
+					<!-- document.write(person.getFullName()); -->
+					
+					//Kiem tra co ton tai trong object khong
+					
+				
+					var ten = prompt("Please input first Name");
+					var ho = prompt("Please input last Name");
+					var person1 = new Object();
+					person1.firstName =  ten;
+					person1.lastName =  ho;
+					if(person1.hasOwnProperty("firstName","lastName"))
+					{
+						//console.log(person1.firstName + "" + person1.lastName);
+						document.write(person1.firstName + " " + person1.lastName	);
+					}else
+					{
+						console.log("this property is not existed");
+					}
+					
+					for (var key in person1)
+					{
+						console.log(person1.firstName + " " + person1.lastName);
+					}
+					
+					
+					<!-- var result = confirm('are you sure delete this record'); -->
+					<!-- if(result == true) -->
+					<!-- { -->
+						<!-- document.write("user accepted"); -->
+					<!-- }else -->
+					<!-- { -->
+						<!-- document.write("user rejected"); -->
+					<!-- } -->
+					
+					
+					<!-- var vd = comfirm("are you delete this record"); -->
+					<!-- for (var key in person1) -->
+					<!-- { -->
+						<!-- console.log(key); -->
+					<!-- } -->
+		</script>
+</body>
+
+</html>
+

@@ -1,0 +1,78 @@
+<html>
+<head>
+</head>
+<body>
+		<script>
+					//var emptyObject {};
+					
+					<!-- var person = { -->
+						<!-- firstName: "John Carry" -->
+					<!-- } -->
+					<!-- console.log(person.firstName) -->
+					
+					<!-- var messageObject = { -->
+						<!-- showMessage : function(val){ -->
+							<!-- alert(val); -->
+						<!-- } -->
+					<!-- } -->
+					<!-- console.log(messageObject.showMessage()); -->
+					
+					
+					<!-- var people = { -->
+						<!-- firstName : "Mask", -->
+						<!-- lastName : "ware", -->
+						<!-- age :18, -->
+						<!-- getFullName : function(){ -->
+							<!-- return this.firstName + ' ' + this.lastName;  -->
+						<!-- } -->
+					<!-- } -->
+					<!-- console.log(people.getFullName()); -->
+						
+							<!-- var vd = 4; -->
+							<!-- vd 	== 4 ? document.write("aaaa") : document.write("aaaa11"); -->
+					
+					
+							<!-- var ten = { -->
+								
+							<!-- } -->
+					
+							var fN = prompt('Please input your firstname');
+							
+							if(fN == "")
+							{	
+								console.log("Please input first name!");
+								var fN = prompt('Please input your firstname');
+								if(fN != "")
+								{
+									var lN = prompt('Please input your lastname');
+								}
+							}else {
+								var lN = prompt('Please input your lastname');
+								if (lN == ""){
+									var lN = prompt('Please input your lastname');
+									console.log("Please input last name!");
+									         }	
+								  }	
+						var input ={
+							firstName: fN,
+							lastName: lN,
+							getFullName : function(){
+								return this.lastName +''+ this.firstName;
+							}
+						}
+						document.write(input.lastName +" "+input.firstName);
+						//console.log(input.lastName +" "+ input.firstName);
+						<!-- if(fN == "" || lN == ""){ -->
+							<!-- document.write("Please input first name and last name  !"); -->
+						<!-- }else -->
+						<!-- { -->
+							<!-- document.write(input.lastName +" "+input.firstName); -->
+						<!-- } -->
+						
+						
+						
+		</script>
+</body>
+
+</html>
+
